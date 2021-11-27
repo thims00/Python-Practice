@@ -13,15 +13,19 @@ def sort_lst(lst, order):
 	if order.upper == "NONE":
 		return lst
 
-
+	# Sort our list <-> numerically
 	lst.sort()
 
+	# Default order is ASC
 	if order.upper() == "ASC":
 		return lst
-
+	
+	# Reverse our order
 	elif order.upper() == "DESC":
 		lst.reverse()
 		return lst
+
+	# Unhandled Exception
 	else:
 		return False
 
